@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SignUp">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullname"
+        android:inputType="text"
+        android:hint="Full name"
+        android:textColorHint="#ff9999"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateofbirth"
+        android:inputType="number"
+        android:hint="Enter your date of birth (dd/mm/yyyy)"
+        android:focusable="false"
+        android:ems="10"
+        android:textColorHint="#ff9999"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:textColor="#ff9999" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="  Male"
+            android:textColor="#ff9999"/>
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Female"
+            android:textSize="19dp"
+            android:textColor="#ff9999" />
+    </RadioGroup>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobile"
+        android:inputType="phone"
+        android:hint="Enter your mobile no. (Without +88)"
+        android:textColorHint="#ff9999"
+        android:textColor="@color/black"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupemail"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColorHint="#ff9999"
+        android:textColor="@color/black"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signuppassword"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#ff9999"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmpassword"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:textColorHint="#ff9999"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/signupbutton"
+        android:backgroundTint="#990000"
+        android:textColor="@color/white"
+        android:text="SIGN UP"/>
+
+
+</LinearLayout>
